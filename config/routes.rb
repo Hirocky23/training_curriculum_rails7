@@ -1,4 +1,3 @@
 Rails.application.routes.draw do
-  root 'calendars#index'
-  resources :calendars
+  resources :calendars, only: [:index, :create]
 end
